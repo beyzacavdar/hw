@@ -1,0 +1,8 @@
+a=[1,3,5]
+b=[0,2,4]
+c=a+b
+#c=[1,3,5,0,2,4]
+d=[element*2 for element in c]
+#d=[2,6,10,0,4,8]
+for i in d:
+  print(type(i))
