@@ -1,0 +1,51 @@
+student1 = str(input("Please enter the first student's name:"))
+mid1 = float(input("first student's midterm grade"))
+proj1 = float(input("first student's project grade"))
+final1 = float(input("first student's final grade"))
+student2 = str(input("Please enter the second student's name:"))
+mid2 = float(input("second student's midterm grade"))
+proj2 = float(input("second student's project grade"))
+final2 = float(input("second student's final grade"))
+student3 = str(input("Please enter the third student's name:"))
+mid3 = float(input("third student's midterm grade"))
+proj3 = float(input("third student's project grade"))
+final3 = float(input("third student's final grade"))
+student4 = str(input("Please enter the fourth student's name:"))
+mid4 = float(input("fourth student's midterm grade"))
+proj4 = float(input("fourth student's project grade"))
+final4 = float(input("fourth student's final grade"))
+student5 = str(input("Please enter the fifth student's name:"))
+mid5 = float(input("fifth student's midterm grade"))
+proj5 = float(input("fifth student's project grade"))
+final5 = float(input("fifth student's final grade"))
+
+# passingGrade = midterm * (0.3) + project * (0.3) + final * (0.4)
+grade1 = mid1 * 0.3 + proj1 * 0.3 + final1 * 0.4
+grade2 = mid2 * 0.3 + proj2 * 0.3 + final2 * 0.4
+grade3 = mid3 * 0.3 + proj3 * 0.3 + final3 * 0.4
+grade4 = mid4 * 0.3 + proj4 * 0.3 + final4 * 0.4
+grade5 = mid5 * 0.3 + proj5 * 0.3 + final5 * 0.4
+
+students_info = {'name1': student1, 'midterm1': mid1, 'project1': proj1, 'final1': final1, 'grade1': grade1,
+                 'name2': student2, 'midterm2': mid2, 'project2': proj2, 'final2': final2, 'grade2': grade2,
+                 'name3': student3, 'midterm3': mid3, 'project3': proj3, 'final3': final3, 'grade3': grade3,
+                 'name4': student4, 'midterm4': mid4, 'project4': proj4, 'final4': final4, 'grade4': grade4,
+                 'name5': student5, 'midterm5': mid5, 'project5': proj5, 'final5': final5, 'grade5': grade5}
+
+print(students_info)
+
+liste = [grade1, grade2, grade3, grade4, grade5]
+liste.sort()
+print(liste)
+print("Highest grade is:", liste[-1])
+if liste[-1] == grade1:
+    clever = student1
+elif liste[-1] == grade2:
+    clever = student2
+elif liste[-1] == grade3:
+    clever = student3
+elif liste[-1] == grade4:
+    clever = student4
+elif liste[-1] == grade5:
+    clever = student4
+print("Congratulations!", clever)
